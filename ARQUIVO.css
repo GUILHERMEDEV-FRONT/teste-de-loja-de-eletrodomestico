@@ -1,0 +1,28 @@
+p{
+ 
+    font-family: arial, helvetica, sans-serif;
+}
+
+#formas_pagamentos{
+    color: red;
+}
+.menu {
+    background: #ff0000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#rodape {
+    text-align: center;
+}
+
+.preço {
+    color: #ff0000;
+}
+
+.container {
+    display: grid;
+}

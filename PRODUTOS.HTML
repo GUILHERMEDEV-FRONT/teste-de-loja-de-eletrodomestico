@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<HTML lang="PT-BR">
+    <HEad>
+        <meta charset="UTF-8">
+        <TItle> Produtos - Full Stack Eletro </TItle>
+        <link rel="stylesheet" href="CSS/ARQUIVO.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="JAVASCRIPT/Funções.js"></script>
+    </HEad>
+<body>
+        <!-- inicio do Menu -->
+        <header class="cabecalho">
+            <a class="cabecalho-menu-item" href="INDEX.HTML"><img class="cabecalho-imagem" src="./imagens/logo.png" alt="Full Stack Eletro"></a> 
+            <nav class="cabecalho-menu">
+               
+                <a class="cabecalho-menu-item" href="PRODUTOS.HTML">Produto</a>
+                <a class="cabecalho-menu-item" href="LOJAS.HTML">Nossas lojas</a>
+                <a class="cabecalho-menu-item" href="FALE CONOSCO.HTML">Fale conosco</a>
+            </nav>
+        </header>
+         <!-- fim do Menu -->
+    <main class="Menu">
+    <div class="categorias">
+        <img class="imagem-categoria" src="./imagens/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        <h3 >Categorias</h3>
+        <ul class=>
+            <li onclick ="exibir_todos()">todos (12)</li>
+            <li onclick ="exibir_categoria('geladeira')">Geladeiras (3)</li>
+            <li onclick ="exibir_categoria('folgao')">Folgões (2)</li>
+            <li onclick ="exibir_categoria('microondas')">Microondas (3)</li>
+            <li onclick ="exibir_categoria('lavaroupas')">Lavadoura de roupas (2)</li>
+            <li onclick ="exibir_categoria('lavaloucas')">Lava - louças (2)</li>
+        </ul>
+    </div>
+</main>
+         <!-- 1° geledaira-->
+ <div class="container">
+
+    <section class="Produtos-primario">
+         <div class="produtos" >
+            <div class="box_produto" id="geladeira" style = "display:block">
+                <img class="imagem-geladeira" src="./imagens/geladeria.png" onclick="destaque(this)">
+               
+                <div class="descricao">Geladeira Frost Free Brastemp Side Inverse 540 litros
+                </div> 
+                
+               <div class="descricao"><strike>R$ 6.389,00</strike></div>
+               <div class="preço">R$ 5.019,00</div>
+              
+            </div>
+         </div>
+       
+    
+        <!-- 2° geledaira-->
+         <div class="produtos">
+            <div class="box_produto" id="geladeira" style = "display:block">
+                <img src="./imagens/geladeira 375 litros.png" width="100px" onclick="destaque(this)">
+                
+                <div class>Geladeira Brastemp Frost Free Duplex 375 litros cor Branca com Espaço Adapt - BRM45JB</div>
+             
+                <div class="descricao"><strike>R$ 6.068,60</strike></div>
+                <div class="preço">R$ 4.910,90</div>
+                 
+            </div>
+         </div>
+        
+    
+       <!-- 3° geladeira--> 
+
+        <div class="produtos">
+            <div class="box_produto" id="geladeira" style = "display:block">
+                <img src="./imagens/3° geladeira.png" width="120px" onclick="destaque(this)">
+                
+                <div class="descricao">Geladeira Frost Free Brastemp French Door 554 litros Inox - BRO85AK</div>
+              <div class="descricao"><strike>R$ 5.068,60</strike>            
+              </div>
+              <div class="preço">R$ 3.910,90
+              </div>
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- 1° fogão -->
+      <section class="produtos-secundario">
+     <div class="produtos">
+        <div class="box_produto" id="fogao" style = "display:block">
+         <img src="./imagens/1° fogao.png" width="120px" onclick="destaque(this)">
+              
+             <div class="descricao">Fogão Brastemp 5 Bocas Branco Com Turbo Chama - BFS5ECB • BIVOLT</div>     
+             <div class="descricao"><strike>R$ 3.068,60</strike></div>
+             <div class="preço">R$ 2.910,90</div>
+             
+
+        </div>
+     </div>
+   
+ 
+     <!-- 2° fogao -->
+ 
+     <div class="produtos">
+         <div class="box_produto" id="fogao" style = "display:block">
+             <img src="./imagens/2° Fogao.png" width="120px" onclick="destaque(this)">
+
+        </div>
+        
+        <div class="descricao">Fogão 4 bocas Electrolux Prata Efficient com Mesa de Vidro, Tripla Chama e VaporBake (FE4GS) - Bivolt</div>
+        <div class="descricao"><strike>R$ 1.068,60</strike></div>
+        <div class="preço">R$ 910,90</div>
+      
+        
+     </div>
+
+     <!--1° microondas-->
+
+     <div class="produtos">
+        <div class="box_produto" id="microondas" style = "display:block">
+            <img src="./imagens/1° microondas.png" width="120px" onclick="destaque(this)">
+        </div>
+       
+       <div class="descricao">Micro-ondas Electrolux 31L cor Inox Espelhado com Painel Integrado e Função Tira Odor (MI41S)
+        (FE4GS) - Bivolt</div> 
+       <div class="descricao"><strike>R$ 3.068,60</strike></div>
+        <div class="preço">R$ 2.910,90</div>
+       
+     </div>
+    </section>
+
+
+      <!-- 2° microondas-->
+      <section class="produtos-terciario">
+     <div class="produtos">
+     <div class="box_produto" id="microondas" style = "display:block">
+        <img src="./imagens/2° microondas.png" width="120px" onclick="destaque(this)">
+     </div>
+    
+     <div class="descricao">Micro-ondas Philco PMO28S 25 Litros Limpa Fácil 1100W 110v
+     <div>
+    
+     <div class="descricao"><strike>R$ 2.990,60</strike></div>
+     <div class="preço">R$ 2.590,90</div>
+    
+     </div>
+
+
+
+             <!--3° microndas-->
+
+      <div class="produtos">
+        <div class="box_produto" id="microondas" style = "display:block">
+    
+        <img src="./imagens/3° microondas.png" width="120px" onclick="destaque(this)">
+
+     </div>
+      
+           <div class="descricao">Micro-ondas Philco 25l Pm26 Limpa Fácil 1100w 220v</div>
+       <div class="descricao"><strike>R$ 2.068,60</strike></div>
+          <div class="preço">
+       R$ 1.710,90
+      </div>
+      
+        </div>
+
+        <!--1° lavadoura de roupas-->
+
+        <div class="produtos">
+     <div class="box_produto" id="lavaroupas" style = "display:block">
+        <img src="./imagens/1° maquina de lavar.png" width="120px" onclick="destaque(this)">
+      </div>
+     
+      <div class="descricao">Lavadora Brastemp 10kg titanium com Smart Sensor, Tira Manchas Pro e Motor Inverter - BNF10AS • 110V
+      </div>
+      <div class="descricao"><strike>R$ 4.068,60</strike></div>
+      <div class="preço">R$ 3.910,90</div>
+
+      </div>
+
+    </section>
+        <!--2° lavadaoura de roupas-->
+
+         <div class="produtos">
+      <div class="box_produto" id="lavaroupas" style = "display:block">
+        <img src="./imagens/2° maquina de lavar.png" width="120px" onclick="destaque(this)">
+
+       </div>
+     
+      <div class="descricao">Máquina de Lavar Brastemp 13Kg Cinza Platinum com Ciclo Tira Manchas Advanced e Ciclo Antibolinha - BWK13A9 • 110v
+      </div>
+      <div class="descricao"><strike>R$ 6.068,60</strike></div>
+      <div class="preço">R$ 5.910,90</div>
+    
+      </div>
+
+
+       <!--1° lava louças-->
+
+        <div class="produtos">
+        <div class="box_produto" id="lavaloucas" style = "display:block">
+       <img src="./imagens/1° lava loças.png" width="120px" onclick="destaque(this)">
+      </div>
+      
+       <div class="descricao">Lava Louças 8 Serviços Brastemp Cinza - BLF08BS 110V</div>
+        <div class="descricao"><strike>R$ 5.068,60</strike></div>
+          <div class="preço">R$ 910,90</div>
+      
+        </div>
+
+        <!-- 2° lava louças -->
+
+
+        <div class="produtos">
+        <div class="box_produto" id="lavaloucas" style = "display:block">
+     <img src="./imagens/2° lava louças.png" width="120px" onclick="destaque(this)"></div></div>
+       
+          <div class="descricao">Lava Louças 14 Serviços Brastemp Preta com Ciclo Pesado - BLF14BE • 110V
+       </div>
+       <div class="descricao"><strike>R$ 5.068,60</strike></div>
+       <div class="preço">R$ 3.910,90</div>
+      
+       </div>
+    </div>
+
+    <footer class="rodape">
+        
+        <p class="formas-pagamentos"><b>Formas de pagamento:
+        </b>
+    
+    </p>
+    <img class="cartao" src="./imagens/cartao.png" alt="formas de pagamento">
+
+        <p class="copyryte">&copy; Recode Pro
+            </p>
+        </footer>
+</body>
+</HTML>
+        </tr>
+        
